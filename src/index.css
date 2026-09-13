@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "daisyui";
+.gradient-text {
+  background: linear-gradient(90deg, #ff4b2b, #d414f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-btn {
+  background: linear-gradient(90deg, #ff4b2b, #d414f5);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
