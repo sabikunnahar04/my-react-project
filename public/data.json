@@ -14,7 +14,7 @@
     "name": "Vue.js",
     "category": "Frontend",
     "description": "A progressive JavaScript framework for building interactive web interfaces.",
-    "icon": "https://icon.icepanel.io/Technology/svg/Vue.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
     "rating": 4.8,
     "difficulty": "Beginner-Friendly",
     "badge": "Trending"
