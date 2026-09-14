@@ -6,6 +6,7 @@ import SelectedStack from "./component/Select/SelectedStack";
 import Text from "./component/Text";
 import type { IPlayer } from "./Types/player";
 import { toast } from "react-toastify";
+import Footer from "./component/Footer/Footer";
 
 const playersFetch = async (): Promise<IPlayer[]> => {
   const res = await fetch("/data.json");
@@ -14,7 +15,7 @@ const playersFetch = async (): Promise<IPlayer[]> => {
 };
 
 function App() {
-  const playersPromise = playersFetch();
+  const [playersPromise] = useState(() => playersFetch());
 
   
   const [selectedPlayers, setSelectedPlayers] = useState<IPlayer[]>([]);
@@ -70,6 +71,7 @@ function App() {
         </div>
 
       </main>
+      <Footer/>
     </>
   );
 }
