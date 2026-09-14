@@ -3,13 +3,13 @@ import type { IPlayer } from '../../Types/player';
 
 interface SelectedStackProps {
     selectedPlayers: IPlayer[];
-    onRemove: (id: string) => void;
+    onRemove: (id: string | number) => void; 
     onRemoveAll: () => void;
 }
 
 const SelectedStack = ({ selectedPlayers, onRemove, onRemoveAll }: SelectedStackProps) => {
     return (
-        <div className="w-full lg:w-80 bg-white border border-gray-100 rounded-2xl p-5 shadow-sm h-fit sticky top-6">
+        <div className="w-full bg-white border border-gray-100 rounded-2xl p-5 shadow-sm h-fit sticky top-6">
             <h2 className="text-lg font-bold text-gray-900">Your Stack</h2>
             <p className="text-xs text-gray-500 mb-4">{selectedPlayers.length} Technology Selected</p>
 
